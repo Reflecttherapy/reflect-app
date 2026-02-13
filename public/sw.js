@@ -1,7 +1,7 @@
 /* public/sw.js */
 /* Simple offline cache for Reflect (no Workbox, no eject needed) */
 
-const CACHE_NAME = "reflect-cache-v1";
+const CACHE_NAME = "reflect-cache-v4";
 
 // Cache the core “app shell” pages/icons
 const CORE_ASSETS = [

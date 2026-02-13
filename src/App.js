@@ -384,8 +384,8 @@ export default function App() {
               wait. It is not therapy or crisis support. If you feel unsafe or
               need urgent help, go to the Support tab.
             </div>
+<h1 style={{ marginBottom: "10px" }}>Reflect TEST</h1>
 
-            <h1 style={{ marginBottom: "10px" }}>Reflect</h1>
 
             <p style={{ marginBottom: "20px", lineHeight: "1.5" }}>
               Welcome to Reflect, I’m really glad you’re here. This space is here to support you
@@ -945,7 +945,12 @@ export default function App() {
   };
 
   return (
+    
     <div className="app-container">
+       {/* Background blobs */}
+    <div className="bg-shape bg-shape-1" aria-hidden="true" />
+    <div className="bg-shape bg-shape-2" aria-hidden="true" />
+    <div className="bg-shape bg-shape-3" aria-hidden="true" />
       <div className="content">{renderPage()}</div>
 
       <div className="bottom-nav">
@@ -1008,4 +1013,5 @@ export default function App() {
       )}
     </div>
   );
+  
 }

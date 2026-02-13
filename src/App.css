@@ -726,3 +726,168 @@ button, summary, .card {
   margin: 8px 0;
   line-height: 1.45;
 }
+/* ===== Background theme (Canva-style) ===== */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background: #4b668a; /* calm blue */
+  overflow: hidden; /* hides blob edges */
+}
+
+/* Make sure content sits above blobs */
+.content,
+.bottom-nav {
+  position: relative;
+  z-index: 2;
+}
+
+/* Soft blob base */
+.bg-shape {
+  position: absolute;
+  z-index: 1;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* Top-left blob */
+.bg-shape-1 {
+  width: 360px;
+  height: 360px;
+  top: -120px;
+  left: -140px;
+  background: radial-gradient(circle at 30% 30%, #a9c0ad 0%, rgba(169, 192, 173, 0) 70%);
+}
+
+/* Bottom-right blob */
+.bg-shape-2 {
+  width: 420px;
+  height: 420px;
+  bottom: -170px;
+  right: -170px;
+  background: radial-gradient(circle at 60% 60%, #a9c0ad 0%, rgba(169, 192, 173, 0) 70%);
+}
+
+/* Subtle middle blob (optional depth) */
+.bg-shape-3 {
+  width: 320px;
+  height: 320px;
+  top: 45%;
+  left: -160px;
+  background: radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0.35;
+}
+/* Force background to show (override any old beige layers) */
+body {
+  background: #4b668a !important;
+}
+
+.content,
+.main-shell {
+  background: transparent !important;
+}
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background: #4b668a;
+  overflow: hidden;
+}
+
+.content,
+.bottom-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-shape {
+  position: absolute;
+  z-index: 1;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.bg-shape-1 {
+  width: 360px;
+  height: 360px;
+  top: -120px;
+  left: -140px;
+  background: radial-gradient(circle at 30% 30%, #a9c0ad 0%, rgba(169, 192, 173, 0) 70%);
+}
+
+.bg-shape-2 {
+  width: 420px;
+  height: 420px;
+  bottom: -170px;
+  right: -170px;
+  background: radial-gradient(circle at 60% 60%, #a9c0ad 0%, rgba(169, 192, 173, 0) 70%);
+}
+
+.bg-shape-3 {
+  width: 320px;
+  height: 320px;
+  top: 45%;
+  left: -160px;
+  background: radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0.35;
+}
+/* === Canva background test (force visible) === */
+#root,
+.app-container {
+  background: #4b668a !important;
+  min-height: 100vh;
+}
+.content {
+  background: transparent !important;
+}
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make sure cards/nav sit above blobs */
+.content,
+.bottom-nav {
+  position: relative;
+  z-index: 2;
+}
+
+/* Blob base */
+.bg-shape {
+  position: absolute;
+  z-index: 1;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* Top-left */
+.bg-shape-1 {
+  width: 360px;
+  height: 360px;
+  top: -120px;
+  left: -140px;
+  background: radial-gradient(circle at 30% 30%, #a9c0ad 0%, rgba(169, 192, 173, 0) 70%);
+}
+
+/* Bottom-right */
+.bg-shape-2 {
+  width: 420px;
+  height: 420px;
+  bottom: -170px;
+  right: -170px;
+  background: radial-gradient(circle at 60% 60%, #a9c0ad 0%, rgba(169, 192, 173, 0) 70%);
+}
+
+/* Subtle side highlight */
+.bg-shape-3 {
+  width: 320px;
+  height: 320px;
+  top: 45%;
+  left: -160px;
+  background: radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0.35;
+}
